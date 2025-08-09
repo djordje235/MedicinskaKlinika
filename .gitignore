@@ -1,0 +1,15 @@
+# Visual Studio folders
+.vs/
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# Others
+*.log
+*.vspscc
