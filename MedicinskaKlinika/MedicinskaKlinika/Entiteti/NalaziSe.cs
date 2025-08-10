@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MedicinskaKlinika.Entiteti
 {
-    internal class NalaziSe
+    public class NalaziSe
     {
+        public virtual Lokacija Lokacija { get; set; }
+
+        public virtual Odeljenje Odeljenje { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace MedicinskaKlinika.Entiteti
     {
         public virtual String Adresa { get; set; }
 
-        public virtual String radnoVreme{ get; set; }
+        public virtual String RadnoVreme{ get; set; }
 
     }
 }

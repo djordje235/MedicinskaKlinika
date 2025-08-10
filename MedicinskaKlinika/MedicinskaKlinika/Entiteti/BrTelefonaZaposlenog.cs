@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace MedicinskaKlinika.Entiteti
 {
-    internal class BrTelefonaZaposlenog
+    public class BrTelefonaZaposlenog
     {
-        public virtual int JmbgZaposlenog {  get; set; }
-        public virtual int BrojTelefona { get; set; }
+       public virtual Zaposlen Zaposlen { get; set; }
+
+         public virtual String BrojTelefona { get; set; }
     }
 }

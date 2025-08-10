@@ -8,7 +8,6 @@ namespace MedicinskaKlinika.Entiteti
 {
     public class Odeljenje
     {
-        public virtual int Id { get; set; }
 
         public virtual String Naziv { get; set; }
 
@@ -17,6 +16,6 @@ namespace MedicinskaKlinika.Entiteti
 
         public virtual String RadnoVreme { get; set; }
 
-        
+        public virtual Lekar GlavniLekar { get; set; }
     }
 }

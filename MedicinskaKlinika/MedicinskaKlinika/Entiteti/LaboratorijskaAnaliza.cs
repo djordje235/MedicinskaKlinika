@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace MedicinskaKlinika.Entiteti
 {
-    internal class LaboratorijskaAnaliza
+    public class LaboratorijskaAnaliza
     {
+        public virtual Pacijent Pacijent { get; set; }
+
+        public virtual Pregled Pregled { get; set; }
+
+        public virtual String VrstaAnalize { get; set; }
+
+        public virtual DateTime DatumUzorkovanja { get; set; }
+
+        public virtual String Rezultat { get; set; }
+
+        public virtual String ReferentnaVrednost { get; set; }
+
+        public virtual DateTime Vreme { get; set; }
+
+        public virtual String Komentar { get; set; }
+
+        public virtual Laborant Laborant { get; set; }
     }
 }

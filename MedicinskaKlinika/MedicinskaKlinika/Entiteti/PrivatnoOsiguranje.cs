@@ -11,5 +11,7 @@ namespace MedicinskaKlinika.Entiteti
         public virtual int BrPolise { get; set; }
 
         public virtual String OsiguravajucaKuca { get; set; }
+
+        public virtual Pacijent Pacijent { get; set; }
     }
 }

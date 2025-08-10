@@ -14,6 +14,8 @@ namespace MedicinskaKlinika.Entiteti
 
         public virtual String NazivOdeljenja { get; set; }
 
+        public virtual Pacijent Pacijent { get; set; }
 
+        public virtual Lekar Lekar { get; set; }
     }
 }

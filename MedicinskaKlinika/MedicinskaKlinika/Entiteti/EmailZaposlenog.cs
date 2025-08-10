@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MedicinskaKlinika.Entiteti
 {
-    internal class EmailZaposlenog
+    public class EmailZaposlenog
     {
-        public virtual int JmbgZaposlenog {  get; set; }
+        public virtual Zaposlen Zaposlen {  get; set; }
         public virtual String Email { get; set; }
         
     }

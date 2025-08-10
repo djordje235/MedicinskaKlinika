@@ -8,7 +8,6 @@ namespace MedicinskaKlinika.Entiteti
 {
     public class Placanje
     {
-        public virtual int Id { get; set; }
         public virtual int IdPlacanja { get; set; }
 
         public virtual int ProcenatPacijenta { get; set; }
@@ -16,6 +15,12 @@ namespace MedicinskaKlinika.Entiteti
         public virtual String NacinPlacanja { get; set; }
 
         public virtual Boolean PlatioPacijent { get; set; }
+
+        public virtual Racun Racun { get; set; }
+
+        public virtual PrivatnoOsiguranje PrivatnoOsiguranje { get; set; }
+
+        public virtual RFZO RFZO { get; set; }
 
 
     }

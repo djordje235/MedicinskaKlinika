@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MedicinskaKlinika.Entiteti
 {
-    internal class RadiU
+    public class RadiU
     {
+        public virtual Lekar Lekar { get; set; }
+        public virtual Odeljenje Odeljenje { get; set; }
     }
 }

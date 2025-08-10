@@ -30,5 +30,11 @@ namespace MedicinskaKlinika.Entiteti
 
         public virtual DateTime VremeDodatnogPregleda { get; set; }
 
+        public virtual Pacijent Pacijent { get; set; }
+
+        public virtual Lekar Lekar { get; set; }
+
+        public virtual Odeljenje Odeljenje { get; set; }
+
     }
 }

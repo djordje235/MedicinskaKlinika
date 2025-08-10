@@ -10,6 +10,6 @@ namespace MedicinskaKlinika.Entiteti
     {
         public virtual int IdOsiguranja { get; set; }
 
-
+        public virtual Pacijent Pacijent { get; set; }
     }
 }

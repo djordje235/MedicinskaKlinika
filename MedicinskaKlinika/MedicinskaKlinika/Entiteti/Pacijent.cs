@@ -21,6 +21,7 @@ namespace MedicinskaKlinika.Entiteti
 
         public virtual String Pol { get; set; }
 
+        public virtual Lekar Lekar { get; set; }
 
     }
 }

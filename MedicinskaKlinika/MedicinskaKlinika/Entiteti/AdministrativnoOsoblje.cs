@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MedicinskaKlinika.Entiteti
 {
-    internal class AdministrativnoOsoblje : Zaposlen
+    public class AdministrativnoOsoblje : Zaposlen
     {
-        public virtual int JMBG {  get; set; }
+
     }
 }
