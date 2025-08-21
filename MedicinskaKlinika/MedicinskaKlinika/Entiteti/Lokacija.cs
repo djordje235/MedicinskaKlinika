@@ -12,5 +12,16 @@ namespace MedicinskaKlinika.Entiteti
 
         public virtual String RadnoVreme{ get; set; }
 
+        // 1 lokacija može imati više zaposlenih
+        public virtual IList<Zaposlen> Zaposleni { get; set; }
+
+        public virtual IList<Odeljenje> Odeljenja { get; set; }
+
+        public Lokacija()
+        {
+            Zaposleni = new List<Zaposlen>();
+            Odeljenja = new List<Odeljenje>();
+        }
+
     }
 }

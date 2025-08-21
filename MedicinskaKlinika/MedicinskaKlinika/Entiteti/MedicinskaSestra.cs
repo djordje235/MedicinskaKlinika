@@ -8,6 +8,8 @@ namespace MedicinskaKlinika.Entiteti
 {
     public class MedicinskaSestra : Zaposlen
     {
+        public virtual String OblastRada { get; set; }
 
+        public virtual String Sertifikat { get; set; }
     }
 }
