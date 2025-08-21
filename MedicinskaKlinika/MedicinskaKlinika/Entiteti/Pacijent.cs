@@ -23,5 +23,27 @@ namespace MedicinskaKlinika.Entiteti
 
         public virtual Lekar Lekar { get; set; }
 
+        public virtual IList<Racun> Racuni { get; set; }
+
+        public virtual RFZO RFZO { get; set; }
+
+        public virtual PrivatnoOsiguranje PrivatnoOsiguranje { get; set; }
+
+        public virtual IList<Pregled> Pregledi { get; set; }
+
+        public virtual IList<Termin> Termini { get; set; }
+
+        public virtual IList<BrTelefonaPacijenta> Telefons { get; set; }
+
+        public virtual IList<EmailPacijenta> Emails { get; set; }
+        public Pacijent()
+        {
+            Racuni = new List<Racun>();
+            Pregledi = new List<Pregled>();
+            Termini = new List<Termin>();
+            Telefons = new List<BrTelefonaPacijenta>();
+            Emails = new List<EmailPacijenta>();
+        }
+
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MedicinskaKlinika.Entiteti
 {
-    public class Zaposlen
+    public abstract class Zaposlen
     {
         public virtual int JMBG { get; set; }
         public virtual DateTime DatumZaposlenja { get; set; }
@@ -21,8 +21,21 @@ namespace MedicinskaKlinika.Entiteti
         public virtual String Adresa { get; set; }
 
         public virtual int Smena { get; set; }
-
+        
         public virtual Lokacija AdresaLokacije { get; set; }
+
+        public virtual IList<Odeljenje> Odeljenja { get; set; }
+
+        public virtual IList<BrTelefonaZaposlenog> Telefons {  get; set; }
+
+        public virtual IList<EmailZaposlenog> Emails { get; set; }
+
+        public Zaposlen()
+        {
+            Odeljenja = new List<Odeljenje>();
+            Telefons = new List<BrTelefonaZaposlenog>();
+            Emails = new List<EmailZaposlenog>();
+        }
 
     }
 }

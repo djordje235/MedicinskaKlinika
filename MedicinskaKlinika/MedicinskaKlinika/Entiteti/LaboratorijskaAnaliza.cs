@@ -8,6 +8,7 @@ namespace MedicinskaKlinika.Entiteti
 {
     public class LaboratorijskaAnaliza
     {
+        public virtual int IdAnalize {  get; set; }
         public virtual Pacijent Pacijent { get; set; }
 
         public virtual Pregled Pregled { get; set; }
@@ -24,6 +25,7 @@ namespace MedicinskaKlinika.Entiteti
 
         public virtual String Komentar { get; set; }
 
+        // Laborant koji je uradio analizu
         public virtual Laborant Laborant { get; set; }
     }
 }

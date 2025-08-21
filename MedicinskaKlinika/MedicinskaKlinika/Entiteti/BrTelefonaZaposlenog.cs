@@ -8,6 +8,7 @@ namespace MedicinskaKlinika.Entiteti
 {
     public class BrTelefonaZaposlenog
     {
+        public virtual int Id { get; set; }
        public virtual Zaposlen Zaposlen { get; set; }
 
          public virtual String BrojTelefona { get; set; }

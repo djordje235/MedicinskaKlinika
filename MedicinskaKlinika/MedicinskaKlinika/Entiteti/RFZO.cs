@@ -11,5 +11,12 @@ namespace MedicinskaKlinika.Entiteti
         public virtual int IdOsiguranja { get; set; }
 
         public virtual Pacijent Pacijent { get; set; }
+
+        public virtual IList<Placanje> Placanja { get; set; }
+
+        public RFZO()
+        {
+            Placanja = new List<Placanje>();
+        }
     }
 }

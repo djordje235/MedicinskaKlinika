@@ -20,5 +20,7 @@ namespace MedicinskaKlinika.Entiteti
         public virtual Lekar Lekar { get; set; }
 
         public virtual Pacijent Pacijent { get; set; }
+
+        public virtual Placanje Placanje { get; set; }
     }
 }
