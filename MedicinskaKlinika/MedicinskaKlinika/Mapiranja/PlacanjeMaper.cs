@@ -14,7 +14,7 @@ namespace MedicinskaKlinika.Mapiranja
         {
             Table("PLACANJE");
 
-            Id(x => x.IdPlacanja).Column("ID_PLACANJA").GeneratedBy.SequenceIdentity("S19376.PLACANJE_ID_SEQ");
+            Id(x => x.IdPlacanja).Column("ID_PLACANJA").GeneratedBy.Sequence("PLACANJE_ID_SEQ");
 
             Map(x => x.ProcenatPacijenta).Column("PROCENAT_PACIJENTA");
             Map(x => x.NacinPlacanja).Column("NACIN_PLACANJA");

@@ -14,7 +14,7 @@ namespace MedicinskaKlinika.Mapiranja
         {
             Table("RACUN");
 
-            Id(x => x.Id).Column("ID").GeneratedBy.SequenceIdentity("S19376.RACUN_ID_SEQ");
+            Id(x => x.Id).Column("ID").GeneratedBy.Sequence("RACUN_ID_SEQ");
 
             Map(x => x.Popust).Column("POPUST");
             Map(x => x.VrstaUsluge).Column("VRSTA_USLUGE");
